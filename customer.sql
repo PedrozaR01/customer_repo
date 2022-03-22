@@ -24,12 +24,17 @@ table grade level
     grade level id
     grade level name
 */
+
+/*You'll have to be logged in at your server instance and execute this script*/
+
 /*Droping the database 'customer_repo' if it exists and creating it*/
 DROP DATABASE IF EXISTS customer_repo;
 CREATE DATABASE IF NOT EXISTS customer_repo;
 
+/*selecting the database to work with*/
 USE customer_repo;
 
+/* Droping the tables if they exists, creating them with the specified required fields*/
 DROP TABLE IF EXISTS customer;
 
 CREATE TABLE IF NOT EXISTS customer (
