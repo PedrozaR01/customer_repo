@@ -38,39 +38,39 @@ USE customer_repo;
 DROP TABLE IF EXISTS customer;
 
 CREATE TABLE IF NOT EXISTS customer (
-    customerId INT NOT NULL PRIMARY KEY,
+    customer_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     email VARCHAR(255),
-    firstName VARCHAR(255),
-    lastName VARCHAR(255),
-    zipCode VARCHAR(255),
-    gradeLevel VARCHAR(255),
-    topicId VARCHAR(255),
-    customerDescription VARCHAR(255) 
+    first_name VARCHAR(255),
+    last_name VARCHAR(255),
+    zip_code VARCHAR(255),
+    grade_level VARCHAR(255),
+    topic_id VARCHAR(255),
+    customer_description VARCHAR(255) 
 );
 
 DROP TABLE IF EXISTS processor;
 
 CREATE TABLE IF NOT EXISTS processor(
-    processorId INT NOT NULL PRIMARY KEY,
+    processor_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     email VARCHAR(255),
-    firstName VARCHAR(255),
-    lastName VARCHAR(255),
-    processorIntro VARCHAR(255),
-    supportedTopics VARCHAR(255),
-    processorGradeLevel VARCHAR(255) 
+    first_name VARCHAR(255),
+    last_name VARCHAR(255),
+    processor_intro VARCHAR(255),
+    supported_topics VARCHAR(255),
+    processor_grade_level VARCHAR(255) 
 );
 
 DROP TABLE IF EXISTS topics;
 
 CREATE TABLE IF NOT EXISTS topics(
-    topicId INT NOT NULL PRIMARY KEY,
-    topicName VARCHAR(255),
-    topicGradeLevel VARCHAR(255)
+    topic_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    topic_name VARCHAR(255),
+    topic_grade_level VARCHAR(255)
 );
 
 DROP TABLE IF EXISTS grade_level;
 
 CREATE TABLE IF NOT EXISTS grade_level(
-    gradeLevelId INT NOT NULL PRIMARY KEY,
-    gradeLevelName VARCHAR(255)
+    grade_level_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    grade_level_name VARCHAR(255)
 );
