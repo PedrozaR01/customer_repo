@@ -1,0 +1,35 @@
+customers
+{
+        "customerId": 1,
+        "email": "email@domain.com",
+        "firstName": "name",
+        "lastName": "last",
+        "zipCode": "10100",
+        "gradeLevel": "level",
+        "topicId": "1",
+        "customerDescription": "desc"
+    }
+
+processors
+{
+        "processorId": 1,
+        "email": "email@domain.com",
+        "firstName": "first name",
+        "lastName": "last name",
+        "processorIntro": "intro",
+        "supportedTopics": "sup top",
+        "processorGradeLevel": "level"
+    }
+
+topics
+{
+        "topicId": 1,
+        "topicName": "topic1",
+        "topicGradeLevel": "gradelevel"
+    }
+
+grade level
+{
+        "gradeLevelId": 1,
+        "gradeLevelName": "grade level name"
+    }
