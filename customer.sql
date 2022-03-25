@@ -60,9 +60,9 @@ CREATE TABLE IF NOT EXISTS processor(
     processor_grade_level VARCHAR(255) 
 );
 
-DROP TABLE IF EXISTS topics;
+DROP TABLE IF EXISTS topic;
 
-CREATE TABLE IF NOT EXISTS topics(
+CREATE TABLE IF NOT EXISTS topic(
     topic_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     topic_name VARCHAR(255),
     topic_grade_level VARCHAR(255)
